@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
@@ -24,7 +25,18 @@
     </div>
 
     <button>수정</button>
+
+    <%-- 숨겨져있는 input --%>
+    <input type="hidden" name="index" value="${param.index}">
   </form>
+
+  <c:if test="${not empty sessionScope.message}">
+    <script>
+      alert("${message}");
+    </script>
+    
+    <c:remove var="message" scope="session" />
+  </c:if>
 
 </body>
 </html>

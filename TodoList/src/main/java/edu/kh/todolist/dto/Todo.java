@@ -3,7 +3,6 @@ package edu.kh.todolist.dto;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import jakarta.annotation.Generated;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,14 +11,15 @@ import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
-public class Todo implements Serializable{
-
+public class Todo implements Serializable {
+							// 직렬화 
 	private String title;
 	private String detail;
 	private boolean complete;
 	private LocalDateTime regDate;
+	
 	
 }

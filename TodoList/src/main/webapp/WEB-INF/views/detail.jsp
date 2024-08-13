@@ -31,9 +31,7 @@
   </div>
 
   <%-- 상세 내용 --%>
-  <div class="content">
-    ${todo.detail}
-  </div>
+  <div class="content">${todo.detail}</div>
 
   <div class="btn-container">
     <div>
@@ -46,7 +44,17 @@
       <button id="deleteBtn">삭제</button>
     </div>
   </div>
-  
-  <script src="\resources\js\detail.js"></script>
+
+  <%-- session에 message가 있다면 --%>
+  <c:if test="${not empty sessionScope.message}">
+    <script>
+      // JSP 해석 순서 : EL/JSTL  >  html,css,js
+      alert("${message}");
+    </script>
+
+    <c:remove var="message" scope="session" />
+  </c:if>
+
+  <script src="/resources/js/detail.js"></script>
 </body>
 </html>

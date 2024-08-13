@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  
+}
+
+html, body{
+  background: linear-gradient(to bottom right , rgb(102,124,231), rgb(221, 159, 250));
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-content: center;
+  
+}
+
+.main{
+  width: 800px;
+  height: 300px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
+  margin: auto;
+  box-shadow: 10px 5px 40px rgb(106, 125, 232);
+  
+}
+
+.mainView{
+  width: 100%;
+  height: 50%;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  align-content: center;
+
+}
+.selectView{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  
+}
+
+
+.selectBtn{
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+
+.btn{
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  background-color: rgb(155, 139, 239);
+  box-shadow: 10px 5px 40px rgb(106, 125, 232);
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+
+
+  text-align: center;
+  align-content: center;
+  
+
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.signupContainer{
+  width: 800px;
+  height: 500px;
+  border: 1px solid white;
+  margin: auto;
+  border-radius: 30px;
+
+}
+
+.signupTitle{
+  width: 70%;
+  height: 25%;
+  color: white;
+  margin: auto;
+  font-size: 40px;
+
+  text-align: center;
+  align-content: end;
+}
+
+.signupInput{
+  width: 70%;
+  height: 25%;
+  margin: auto;
+
+  text-align: center;
+  align-content: center;
+}
+
+.inputText{
+  width: 300px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+
+  background-color: rgb(187, 149, 245);
+  border: 1px solid white;
+}
+
+.signupInput1{
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px;
+
+  display: flex;
+}
+
+.placeholder {
+  color: white;
+}
+input::placeholder {
+  color: white;
+  opacity: 1; 
+}
+
+.return{
+  width: 50%;
+  height: 30%;
+  border: 1px solid white;
+  border-radius: 20px;
+  align-content: center;
+
+  margin: 10px;
+}
+
+.complete{
+  width: 50%;
+  height: 30%;
+  border: 1px solid white;
+  border-radius: 20px;
+  align-content: center;
+
+  margin: 10px;
+}
+
+b{
+  color: #ffffff;
+
+}
+
+.seleceMain{
+  width: 800px;
+  height: 800px;
+  border: 1px solid white;
+  border-radius: 30px;
+
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+.selectTitle{
+  width: 100%;
+  height: 15%;
+  border: 1px solid black;
+
+  align-content: center;
+}
+
+.searchName{
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
+
+  justify-content: end;
+  display: flex;
+  flex-direction: row;
+}
+
+.earchNameInput{
+  height: 100%;
+  width: 45%;
+  border: 1px solid black;
+  display: flex;
+}
+
+.searchNameInput1{
+  height: 100%;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.searchNameInput2{
+  height: 100%;
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+}
+
+.searchNameButton{
+  height: 80%;
+  width: 80%;
+
+  border: 1px solid white;
+  color: white;
+}
+
+.searchNameInput1Text{
+  width: 80%;
+  height: 60%;
+  background-color: rgb(187, 149, 245);
+
+  text-align: center;
+}
+
+
+.view{
+  width: 100%;
+  height: 45%;
+  border: 1px solid black;
+}
+
+.viewReturn{
+  width: 100%;
+  height: 30%;
+  border: 1px solid black;
+}
